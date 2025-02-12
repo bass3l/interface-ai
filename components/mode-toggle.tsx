@@ -12,7 +12,7 @@ export function ModeToggle() {
 
   return (
     <Button
-      className="h-7 w-7"
+      className="size-7"
       onClick={() => {
         startTransition(() => {
           setTheme(resolvedTheme === 'dark' ? 'light' : 'dark');

@@ -12,7 +12,7 @@ export function SiteHeader() {
         <div className="container flex h-14 items-center">
           <div className="mr-4 hidden md:flex">
             <Link href="/" className="mr-4 flex items-center gap-2 lg:mr-6">
-              <Icons.logo className="h-6 w-6" />
+              <Icons.logo className="size-6" />
               <span className="hidden font-bold lg:inline-block">
                 {siteConfig.name}
               </span>
@@ -24,14 +24,14 @@ export function SiteHeader() {
                 asChild
                 variant="ghost"
                 size="icon"
-                className="h-8 w-8 px-0"
+                className="size-8 px-0"
               >
                 <Link
                   href={siteConfig.links.github}
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <Icons.gitHub className="h-4 w-4" />
+                  <Icons.gitHub className="size-4" />
                   <span className="sr-only">GitHub</span>
                 </Link>
               </Button>

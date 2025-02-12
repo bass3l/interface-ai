@@ -1,12 +1,10 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "complex-component",
-  "type": "registry:component",
+  "type": "registry:block",
   "title": "Complex Component",
   "description": "A complex component showing hooks, libs and components.",
-  "registryDependencies": [
-    "card"
-  ],
+  "registryDependencies": ["card"],
   "files": [
     {
       "path": "registry/complex-component/page.tsx",
@@ -34,5 +32,6 @@
       "content": "\"use client\"\n\n// Totally unnecessary hook, but it's a good example of how to use a hook in a custom registry.\n\nexport function usePokemonImage(number: number) {\n  return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${number}.png`\n}\n",
       "type": "registry:hook"
     }
-  ]
+  ],
+  "categories": ["blocks-2"]
 }
